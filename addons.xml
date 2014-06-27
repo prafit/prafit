@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.infowars"
+       name="Infowars"
+       version="0.1.4"
+       provider-name="prafit">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.urlresolver" version="2.0.9"/>
+    <import addon="script.module.metahandler" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch videos by Infowars and Alex Jones</summary>
+    <description lang="en">Watch videos by Infowars and Alex Jones</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.prafit" name="Prafit's Repo" version="1.0" provider-name="prafit">
+	<extension point="xbmc.addon.repository" name="Prafit Addon Repository">
+		<info compressed="false">http://github.com/prafit/prafit/raw/master/addons.xml</info>
+		<checksum>http://github.com/prafit/prafit/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://github.com/prafit/prafit/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install addons made by prafit</summary>
+		<description>Install addons made by prafit(Infowars).......For OFFICIAL !! Support Visit XBMCHUB.COM</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+</addons>

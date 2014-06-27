@@ -1,27 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="plugin.video.infowars"
        name="Infowars"
        version="0.1.4"
-       provider-name="prafit">
+       provider-name="Prafit">
   <requires>
-    <import addon="xbmc.python" version="2.0"/>
-    <import addon="script.module.urlresolver" version="2.0.9"/>
-    <import addon="script.module.metahandler" version="1.0.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver" version="2.2.0"/>
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.metahandler" version="2.6.0" />
+        <import addon="script.module.myconnpy" version="1.1.6" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
-  </extension>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup">
+    </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Watch videos by Infowars and Alex Jones</summary>
-    <description lang="en">Watch videos by Infowars and Alex Jones</description>
-    <platform>all</platform>
+  	<summary>Videos from Infowars.com Including live daily shows</summary>
+  	<description>Videos from Infowars.com Including live daily shows</description>
+  	<disclaimer lang="en">This Project was made without association of the creators of infowars.com</disclaimer>
+  	<language>en</language>
+  	<platform>all</platform>
+  	<forum>http://www.xbmchub.com/forums/</forum>
+  	<website>https://github.com/prafit/plugin.video.infowars</website>
+  	<email></email>
   </extension>
 </addon>
 
-<addon id="repository.prafit" name="Prafit's Repo" version="1.0" provider-name="prafit">
-	<extension point="xbmc.addon.repository" name="Prafit Addon Repository">
+<addon id="repository.prafit" name="Prafit Repository" version="1.0" provider-name="Prafit">
+	<extension point="xbmc.addon.repository" name="Prafit Repository">
 		<info compressed="false">http://github.com/prafit/prafit/raw/master/addons.xml</info>
 		<checksum>http://github.com/prafit/prafit/raw/master/addons.xml.md5</checksum>
 		<datadir zip="true">http://github.com/prafit/prafit/raw/master/zips</datadir>
@@ -32,5 +40,4 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-
 </addons>

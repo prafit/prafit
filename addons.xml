@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.infowars"
        name="Infowars"
-       version="0.1.4"
+       version="1.0.0"
        provider-name="Prafit">
   <requires>
         <import addon="xbmc.python" version="2.1.0"/>

@@ -13,3 +13,9 @@
 - Added Infowars Historic Live Video
 - Added Infowars Clips
 - Added Infowars Nightly News
+
+[B]Version 1.0.0[/B]
+- Added More Documentaries
+- Added Add to Library Feature for Documentaries
+- Added Add to Library Feature for Infowars Nightly News
+- Cleaned up the settings for the app so only items pertent to end user listed.

@@ -301,7 +301,7 @@ def Menu_MainMenu(): #The Main Menu
     _infowars.add_directory({'mode': 'PlayURL','url':'http://cdn.rbm.tv:1935/rightbrainmedia-originpull-2/_definst_/mp4:247daily2/playlist.m3u8'},{'title':  cFL_('Infowars.com Live Video(Loops After Airing)',ps('cFL_color'))},is_folder=False,img=_artIcon,fanart=_artFanart)
     _infowars.add_directory({'mode': 'PlayURL','url':'http://www.infowars.com/stream.pls'},{'title':  cFL_('Infowars.com Live Audio(Loops After Airing)',ps('cFL_color'))},is_folder=False,img=_artIcon,fanart=_artFanart)
     video_type = ('tvshow')
-    title = (cFL_('Infowars Nightly News',ps('cFL_color3')))
+    title = ('Infowars Nightly News')
     year = ('')
     img = _artIcon
     imdbnum = ''
